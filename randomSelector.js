@@ -1,12 +1,8 @@
-let continueToPage = prompt("Do you want to proceed with this exercise?") 
+let introduction = document.getElementById('intro')
+let nameIntro = document.querySelector('h2')
 
-if (continueToPage.toLowerCase === "no") {
-    let document = quitPage; 
-    quitPage.close();
-} else {
-    alert("Welcome!");
-}
-
-function (numberEntered){
-    
-}
+introduction.addEventListener('click', () =>{
+    introduction.textContent = input.value
+    input.value = ""
+    nameIntro.prepend(`Hello ${input.value}, here are your`) 
+} )
